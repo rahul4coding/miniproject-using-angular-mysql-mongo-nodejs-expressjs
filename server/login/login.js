@@ -31,7 +31,7 @@ connection.query("select *from login_details where uname='"+uname+"' and upwd='"
         }, 'hr@nareshit.in')
 
         prop.token=my_token;
-        res.send({'login':'success', 'token':'my_token'});
+        res.send({'login':'success', 'token':my_token});
     }else{
         res.send({'login':'failure'})
     }
@@ -42,4 +42,4 @@ connection.query("select *from login_details where uname='"+uname+"' and upwd='"
 
 //export the module
 
-module.export = router;
+module.exports = router;

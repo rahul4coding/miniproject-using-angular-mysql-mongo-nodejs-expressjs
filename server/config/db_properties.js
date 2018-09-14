@@ -4,7 +4,8 @@ module.exports = {
     host: "localhost",
     user: "root",
     passwrod: "",
-    database: "miniproject"
+    database: "miniproject",
+    token: ""
  
  
   };

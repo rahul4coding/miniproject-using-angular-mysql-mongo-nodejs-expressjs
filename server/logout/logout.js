@@ -11,12 +11,14 @@ router.post("/", function(req,res){
 
     //compare client token woth server token
 
-    if(token ==prop.token){
+    if(token == prop.token){
         prop.token="";
-    }else{
+        res.send("token deleted"); 
+    }
+    else{
         res.send("Error");
     }
     
 })
 
-module.exports =  router;
+module.exports = router;
