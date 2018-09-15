@@ -13,7 +13,7 @@ router.post("/", function(req,res){
 
     if(token == prop.token){
         prop.token="";
-        res.send("token deleted"); 
+        res.send({'token':'deleted successfully'}); 
     }
     else{
         res.send("Error");
