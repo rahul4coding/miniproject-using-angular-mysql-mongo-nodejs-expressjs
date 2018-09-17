@@ -1,8 +1,10 @@
-<form (ngSubmit)="login({'uname':uname, 'upwd':upwd})">
-<label >uname</label>&emsp;&emsp;&emsp;&emsp;
-<input type="text" [(ngModel)]="uname" name="uname" ><br><br>
-<label >upwd</label>&emsp;&emsp;&emsp;&emsp;
-<input type="password" [(ngModel)]="upwd" name="upwd">
-<br><br>
-<input type="submit" > 
-</form>
+<div class="container">
+  <form class="form-group" (ngSubmit)="login({'uname':uname, 'upwd':upwd})">
+    <label>uname</label>
+    <input class="form-control" type="text" [(ngModel)]="uname" name="uname">
+    <label>upwd</label>
+    <input class="form-control" type="password" [(ngModel)]="upwd" name="upwd">
+    <br>
+    <input class="btn btn-success" type="submit" value="Login">
+  </form>
+</div>
