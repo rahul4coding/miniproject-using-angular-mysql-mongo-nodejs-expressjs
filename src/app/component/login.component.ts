@@ -18,7 +18,7 @@ export class loginComponent{
     };
 
     public _successCallBack =(res):any=>{
-        if(res.login=="success"){
+        if(res.login == "success"){
             window.localStorage.setItem("login_details", JSON.stringify(res));
             this._router.navigate(['/dashboard']);
         }else{

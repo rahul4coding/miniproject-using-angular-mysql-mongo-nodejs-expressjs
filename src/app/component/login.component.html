@@ -1,8 +1,8 @@
-<form (ngSubmit)="login()">
+<form (ngSubmit)="login({'uname':uname, 'upwd':upwd})">
 <label >uname</label>&emsp;&emsp;&emsp;&emsp;
-<input type="text" [(ngModel)]="uname" ><br><br>
+<input type="text" [(ngModel)]="uname" name="uname" ><br><br>
 <label >upwd</label>&emsp;&emsp;&emsp;&emsp;
-<input type="password" [(ngModel)]="upwd">
+<input type="password" [(ngModel)]="upwd" name="upwd">
 <br><br>
 <input type="submit" > 
 </form>

@@ -5,13 +5,20 @@ import {HttpErrorResponse} from "@angular/common/http";
 
 
 @Component({
-    templateUrl: "./dashboard.service.html"
+    templateUrl: "./dashboard.component.html"
 })
 
 export class dashboardComponent{
     private logoutSubscribe:any;
 
     constructor(private _service:dashboardService, private _router:Router){}
+
+    ngOnInit(){
+        // this.logoutSubscribe = this._service.logoutData().subscribe(this._successCallBack, this._errorCallBack);
+        
+        
+    }
+
 
     public logout():any{
         this.logoutSubscribe = this._service.logoutData().subscribe(this._successCallBack, this._errorCallBack);
