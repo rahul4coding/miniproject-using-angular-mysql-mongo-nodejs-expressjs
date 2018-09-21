@@ -1,2 +1,24 @@
-<h1>Getting data from static json file</h1>
-<h1 style="color:green">{{result | json}}</h1>
+<h1>Getting data from static json file</h1><br><br>
+<!-- <h1 style="color:green" *ngFor="let x of result">{{x.p_id}}...{{x.p_name}}...{{x.p_cost}}</h1> -->
+
+
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>#</th>
+            <th>P_ID</th>
+            <th>P_NAME</th>
+            <th>P_COST</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let x of result; let i=index">
+            <th scope="row">{{i}}</th>
+            <td>{{x.p_id}}</td>
+            <td>{{x.p_name}}</td>
+            <td>{{x.p_cost}}</td>
+        </tr>
+        
+    </tbody>
+</table>
